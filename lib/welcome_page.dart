@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -20,20 +21,25 @@ class _WelcomePageState extends State<WelcomePage> {
           children: [
             Text(
               "Welcome",
-              style: TextStyle(
+              style: GoogleFonts.inter(
                 fontSize: 30,
                 fontWeight: FontWeight.w600,
-                // letterSpacing: 0.5
               ),
             ),
             Text(
               "Start by entering your phone number to continue",
-              style: TextStyle(fontSize: 16, color: Colors.grey.shade700),
+              style: GoogleFonts.inter(
+                fontSize: 15,
+                color: Colors.grey.shade700,
+              ),
             ),
             SizedBox(height: 10),
             Text(
               "Phone Number",
-              style: TextStyle(fontSize: 15, letterSpacing: 0.7),
+              style: GoogleFonts.inter(
+                fontSize: 15,
+                color: Colors.grey.shade700,
+              ),
             ),
             TextField(
               decoration: InputDecoration(
@@ -65,7 +71,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 children: [
                   Text(
                     "Continue",
-                    style: TextStyle(
+                    style: GoogleFonts.inter(
                       color: Colors.white,
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
@@ -79,11 +85,11 @@ class _WelcomePageState extends State<WelcomePage> {
             RichText(
               text: TextSpan(
                 text: "By continuing, you agree to our ",
-                style: TextStyle(color: Colors.grey),
+                style: GoogleFonts.inter(color: Colors.grey),
                 children: [
                   TextSpan(
-                    text: "Terms & Privacy policy",
-                    style: TextStyle(
+                    text: "Terms & Privacy Policy",
+                    style: GoogleFonts.inter(
                       color: Colors.blueAccent,
                       decoration: TextDecoration.underline,
                     ),
