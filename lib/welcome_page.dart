@@ -85,13 +85,15 @@ class _WelcomePageState extends State<WelcomePage> {
             RichText(
               text: TextSpan(
                 text: "By continuing, you agree to our ",
-                style: GoogleFonts.inter(color: Colors.grey),
+                style: GoogleFonts.inter(color: Colors.grey, fontSize: 13),
+              
                 children: [
                   TextSpan(
                     text: "Terms & Privacy Policy",
                     style: GoogleFonts.inter(
                       color: Colors.blueAccent,
                       decoration: TextDecoration.underline,
+                      fontSize: 12
                     ),
                   ),
                 ],
